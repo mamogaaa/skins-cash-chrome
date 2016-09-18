@@ -1,0 +1,13 @@
+{
+  "name": "Skins Cash Prices",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [ "https://skins.cash/*" ],
+      "js": ["jquery.js", "main.js"],
+	   "run_at": "document_end"
+    }
+  ],
+  "permissions": ["http://prices.csgo-cash.com/", "https://*/*"]
+}

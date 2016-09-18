@@ -1,0 +1,14 @@
+{
+  "name": "Hotcharts Direct Download",
+  "version": "2.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [ "http://hotcharts.ru/*" ],
+      "js": ["jquery.js", "main.js"],
+	   "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+ ]
+}
